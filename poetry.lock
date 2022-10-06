@@ -253,6 +253,24 @@ unicode = ["unicodedata2 (>=14.0.0)"]
 woff = ["brotli (>=1.0.1)", "brotlicffi (>=0.8.0)", "zopfli (>=0.1.4)"]
 
 [[package]]
+name = "html5lib"
+version = "1.1"
+description = "HTML parser based on the WHATWG HTML specification"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.dependencies]
+six = ">=1.9"
+webencodings = "*"
+
+[package.extras]
+all = ["chardet (>=2.2)", "genshi", "lxml"]
+chardet = ["chardet (>=2.2)"]
+genshi = ["genshi"]
+lxml = ["lxml"]
+
+[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -747,6 +765,17 @@ docs = ["furo", "olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-issues
 tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
 
 [[package]]
+name = "plotly"
+version = "5.10.0"
+description = "An open-source, interactive data visualization library for Python"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+tenacity = ">=6.2.0"
+
+[[package]]
 name = "prometheus-client"
 version = "0.14.1"
 description = "Python client for the Prometheus monitoring system."
@@ -1038,6 +1067,17 @@ pure-eval = "*"
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 
 [[package]]
+name = "tenacity"
+version = "8.1.0"
+description = "Retry code until it succeeds"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+doc = ["reno", "sphinx", "tornado (>=4.5)"]
+
+[[package]]
 name = "terminado"
 version = "0.16.0"
 description = "Tornado websocket backend for the Xterm.js Javascript terminal emulator library."
@@ -1159,7 +1199,7 @@ requests = ">=2.26"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "6eea548e99b454da113ae6874fb30a77d0f54307a45e046d9eef2f7c057752c1"
+content-hash = "fd9710329ca146eed70ef8706a0ec4d3408f9568d9c9e866f2b3d62afceaf23e"
 
 [metadata.files]
 appdirs = [
@@ -1413,6 +1453,10 @@ fastjsonschema = [
 fonttools = [
     {file = "fonttools-4.37.4-py3-none-any.whl", hash = "sha256:afae1b39555f9c3f0ad1f0f1daf678e5ad157e38c8842ecb567951bf1a9b9fd7"},
     {file = "fonttools-4.37.4.zip", hash = "sha256:86918c150c6412798e15a0de6c3e0d061ddefddd00f97b4f7b43dfa867ad315e"},
+]
+html5lib = [
+    {file = "html5lib-1.1-py2.py3-none-any.whl", hash = "sha256:0d78f8fde1c230e99fe37986a60526d7049ed4bf8a9fadbad5f00e22e58e041d"},
+    {file = "html5lib-1.1.tar.gz", hash = "sha256:b2e5b40261e20f354d198eae92afc10d750afb487ed5e50f9c4eaf07c184146f"},
 ]
 idna = [
     {file = "idna-3.4-py3-none-any.whl", hash = "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"},
@@ -1869,6 +1913,10 @@ Pillow = [
     {file = "Pillow-9.2.0-pp38-pypy38_pp73-win_amd64.whl", hash = "sha256:0030fdbd926fb85844b8b92e2f9449ba89607231d3dd597a21ae72dc7fe26927"},
     {file = "Pillow-9.2.0.tar.gz", hash = "sha256:75e636fd3e0fb872693f23ccb8a5ff2cd578801251f3a4f6854c6a5d437d3c04"},
 ]
+plotly = [
+    {file = "plotly-5.10.0-py2.py3-none-any.whl", hash = "sha256:989b13825cc974390aa0169479485d9257d37848a47bc63957251f8e1a7046ba"},
+    {file = "plotly-5.10.0.tar.gz", hash = "sha256:4d36d9859b7a153b273562deeed8c292587a472eb1fd57cd4158ec89d9defadb"},
+]
 prometheus-client = [
     {file = "prometheus_client-0.14.1-py3-none-any.whl", hash = "sha256:522fded625282822a89e2773452f42df14b5a8e84a86433e3f8a189c1d54dc01"},
     {file = "prometheus_client-0.14.1.tar.gz", hash = "sha256:5459c427624961076277fdc6dc50540e2bacb98eebde99886e59ec55ed92093a"},
@@ -2104,6 +2152,10 @@ soupsieve = [
 stack-data = [
     {file = "stack_data-0.5.1-py3-none-any.whl", hash = "sha256:5120731a18ba4c82cefcf84a945f6f3e62319ef413bfc210e32aca3a69310ba2"},
     {file = "stack_data-0.5.1.tar.gz", hash = "sha256:95eb784942e861a3d80efd549ff9af6cf847d88343a12eb681d7157cfcb6e32b"},
+]
+tenacity = [
+    {file = "tenacity-8.1.0-py3-none-any.whl", hash = "sha256:35525cd47f82830069f0d6b73f7eb83bc5b73ee2fff0437952cedf98b27653ac"},
+    {file = "tenacity-8.1.0.tar.gz", hash = "sha256:e48c437fdf9340f5666b92cd7990e96bc5fc955e1298baf4a907e3972067a445"},
 ]
 terminado = [
     {file = "terminado-0.16.0-py3-none-any.whl", hash = "sha256:3e995072a7178a104c41134548ce9b03e4e7f0a538e9c29df4f1fbc81c7cfc75"},
