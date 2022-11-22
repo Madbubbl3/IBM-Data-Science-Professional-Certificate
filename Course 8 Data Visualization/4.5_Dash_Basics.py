@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import dash
 from dash import html
-import dash_core_components as dcc
+from dash import dcc
 
 # import the dataset
 airline_data = pd.read_csv(
