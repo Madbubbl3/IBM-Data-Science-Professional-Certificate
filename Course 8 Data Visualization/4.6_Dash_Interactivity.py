@@ -14,7 +14,7 @@ app = dash.Dash(__name__)
 app.layout = html.Div(
     children=[
         html.H1(
-            children="Interactive Airline Dashboard",
+            children="Airline Dash Interactivity",
             style={
                 "textAlign": "center",
                 "color": "#503D36",
@@ -26,15 +26,15 @@ app.layout = html.Div(
                 "Input Year",
                 dcc.Input(
                     id="input-year",
-                    value=2010,
+                    value=2015,
                     type="number",
                     style={
-                        "height": "50px",
-                        "font-size": 35
+                        "height": "40px",
+                        "font-size": 40
                     }
                 ),
             ],
-            style={"font-size": 40}
+            style={"font-size": 35}
         ),
         html.Br(),
         html.Br(),

@@ -26,6 +26,7 @@ pywaffle = "^1.1.0"
 wordcloud = "1.8.1"
 folium = "^0.13.0"
 dash = "^2.7.0"
+gunicorn = "^20.1.0"
 
 
 [tool.poetry.group.dev.dependencies]
