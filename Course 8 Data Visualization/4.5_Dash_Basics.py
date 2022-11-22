@@ -49,5 +49,3 @@ app.layout = html.Div(
 # run the application
 if __name__ == "__main__":
     app.run_server()
-
-# add the application title
