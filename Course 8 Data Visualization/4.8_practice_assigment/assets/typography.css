@@ -1,0 +1,27 @@
+body {
+	font: verdana;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+	font: verdana;
+}
+
+#testID {
+	color: rgb(133, 133, 133);
+	text-align: center;
+}
+
+#flex-graph {
+	display: flex
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: rgb(148, 0, 74);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
