@@ -5,7 +5,7 @@ import plotly.express as px
 from dash import dash, dcc, html, Input, Output
 
 # Add Dataframe
-df = pd.read_csv(filepath_or_buffer="/Users/sylvain/Data Science/Coursera IBM-Data-Science-Professional-Certificate/Course 8 Data Visualization/4.8_practice_assigment/assets/automobileEDA.csv")
+df = pd.read_csv(filepath_or_buffer="/Users/sylvain/Data Science/Coursera IBM-Data-Science-Professional-Certificate/Course 8 Data Visualization/5.1_practice_assigment/assets/automobileEDA.csv")
 # Clean the DataFrame
 df = df[df.loc[:, "price"] != "?"]
 df["price"] = df["price"].astype(int)
