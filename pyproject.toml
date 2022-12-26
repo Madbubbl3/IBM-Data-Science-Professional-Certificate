@@ -32,6 +32,7 @@ dtreeviz = "^1.4.1"
 pydotplus = "^2.0.2"
 graphviz = "^0.20.1"
 pydot = "^1.4.2"
+sqlalchemy = "^1.4.45"
 
 
 [tool.poetry.group.dev.dependencies]
