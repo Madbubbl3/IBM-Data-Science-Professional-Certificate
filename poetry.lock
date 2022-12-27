@@ -911,17 +911,6 @@ genshi = ["genshi"]
 lxml = ["lxml"]
 
 [[package]]
-name = "ibm-db"
-version = "3.1.4"
-description = "Python DBI driver for DB2 (LUW, zOS, i5) and IDS"
-category = "main"
-optional = false
-python-versions = "*"
-files = [
-    {file = "ibm_db-3.1.4.tar.gz", hash = "sha256:f05e349d25f07bd246511a0498cd84589327638c466efff99b16a3e146ca1515"},
-]
-
-[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -3059,6 +3048,17 @@ MarkupSafe = ">=2.1.1"
 watchdog = ["watchdog"]
 
 [[package]]
+name = "wget"
+version = "3.2"
+description = "pure python download utility"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "wget-3.2.zip", hash = "sha256:35e630eca2aa50ce998b9b1a127bb26b30dfee573702782aa982f875e3f16061"},
+]
+
+[[package]]
 name = "widgetsnbextension"
 version = "4.0.3"
 description = "Jupyter interactive widgets for Jupyter Notebook"
@@ -3124,4 +3124,4 @@ requests = ">=2.26"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ca110cfbbccdf087abbf017f8bfaa53f2bd4450c5b18ee8d155e81212d96c570"
+content-hash = "5cf5ec61b3c1ce4dff9c8cf68dc507874b5db48b93c0c4a7fd2faec885bea8a2"
