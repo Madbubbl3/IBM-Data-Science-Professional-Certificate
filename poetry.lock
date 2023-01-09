@@ -911,6 +911,33 @@ genshi = ["genshi"]
 lxml = ["lxml"]
 
 [[package]]
+name = "ibm-db"
+version = "3.1.4"
+description = "Python DBI driver for DB2 (LUW, zOS, i5) and IDS"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "ibm_db-3.1.4.tar.gz", hash = "sha256:f05e349d25f07bd246511a0498cd84589327638c466efff99b16a3e146ca1515"},
+]
+
+[[package]]
+name = "ibm-db-sa"
+version = "0.3.8"
+description = "SQLAlchemy support for IBM Data Servers"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "ibm_db_sa-0.3.8-py3-none-any.whl", hash = "sha256:1700282ae715cdcc157ea1e8f6ed3470821ed0d589f2545bb86e377c3d67be0e"},
+    {file = "ibm_db_sa-0.3.8.tar.gz", hash = "sha256:21086bbab8161dddf650644f6743e42f530d48d505562e12a8a12138744211e0"},
+]
+
+[package.dependencies]
+ibm-db = ">=2.0.0"
+sqlalchemy = ">=0.7.3"
+
+[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -3124,4 +3151,4 @@ requests = ">=2.26"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "5cf5ec61b3c1ce4dff9c8cf68dc507874b5db48b93c0c4a7fd2faec885bea8a2"
+content-hash = "8a909a1893982ea9b891c4bb02350a573beb1cf661cee6412afc08142a7be804"
